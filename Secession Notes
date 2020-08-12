@@ -1,0 +1,47 @@
+Container Adapters:
+  stack<T> st;    //Last in first out (LIFO)
+  Features:
+    - deque with some restrictions.
+    - Last in first out.
+  Commonly used Member functions:
+    - size()
+    - empty()
+    - push(val)
+    - pop()   //Avoid Runtime error (RTE)
+    - top()   //Avoid Runtime error (RTE)
+  Iteration:
+    while(!st.empty()){
+      cout<<st.top()<<" ";
+      st.pop();
+    }
+
+  queue<T> q;    //First in first out (FIFO)
+  Features:
+    - deque with some restrictions.
+    - First in first out.
+  Commonly used Member functions:
+    - size()
+    - empty()
+    - push(val)
+    - pop()     //Avoid Runtime error (RTE)
+    - front()   //Avoid Runtime error (RTE)
+  Iteration:
+    while(!q.empty()){
+      cout<<q.front()<<" ";
+      q.pop();
+    }
+
+  priority_queue<T> pq;    //First in first out (FIFO)
+  Features:
+    - Max heap tree.
+  Commonly used Member functions:
+    - size()
+    - empty()
+    - push(val)
+    - pop()     //Avoid Runtime error (RTE)
+    - top()   //Avoid Runtime error (RTE)
+  Iteration:
+    while(!pq.empty()){
+      cout<<pq.top()<<" ";
+      pq.pop();
+    }

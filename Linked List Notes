@@ -1,0 +1,43 @@
+list<T> l;
+  Features:
+    - Constant insertion time.
+    - Dynamic size.
+  Initialization:
+    - list<int> l;
+    - list<int> l(size);       //initialized by Zeros
+    - list<int> l(size, val);
+    - list<int> l2(l1);
+    - list<int> l2(begin, end);
+    - list<int> l = list<int>();
+  Commonly used Member functions:
+    - begin()
+    - end()
+    - rbegin()
+    - rend()
+    - resize(size)
+    - size()
+    - empty()
+    - push_back(val)
+    - pop_back()
+    - back()
+    - push_front(val)
+    - pop_front()
+    - front()
+    - insert(it, val)    ---   insert(it, begin, end)
+    - erase(it)    ---   erase(begin, end)
+    - clear()
+    - sort()
+    - splice(it, list)      ---     splice(it, list, begin, end)    //Cut and paste
+    - remove(val)
+    - merge(list)      //Merges sorted lists
+    - unique()
+  Iteration:
+    for(int i = 0 ; i < n ; ++i){
+      cin>>x;
+      l.push_back(x);
+    }
+    for(int x : l)  //For each (used for printing only)
+      cout<<x;
+      
+    for(auto x = l.begin() ; x!=l.end() ; ++x)
+      cout<<*x;

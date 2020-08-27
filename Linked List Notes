@@ -9,6 +9,8 @@ list<T> l;
     - list<int> l2(l1);
     - list<int> l2(begin, end);
     - list<int> l = list<int>();
+  Iterator Initialization:
+    - list <int> :: iterator it ;
   Commonly used Member functions:
     - begin()
     - end()

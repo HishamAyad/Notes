@@ -1,0 +1,43 @@
+set<T> st;
+
+Features:
+1- set:
+  - Red Black tree -Balanced Binary Search tree-.
+  - No Duplicates.
+  - Seems to be sorted Ascendingly.
+  - search, insert and erase in O(log(n))
+2- multiset:
+  - seems to be sorted Ascendingly.
+  - search, insert and erase in O(log(n))
+  - Allow Duplicates
+3- unorderd_set:
+  - No Duplicates
+  - No sorting
+  - insert and erase in O(1)
+4- unorderd_multiset:
+  - Allow Duplicates
+  - No sorting
+  - insert in O(n)
+Commonly used Member functions:
+  - begin()
+  - end()
+  - rbegin()
+  - rend()
+  - insert(val)
+  - find(val)             //iterator
+  - count(val)            // 0|1
+  - erase(val)      ||    erase(iterator)
+  - lower_bound(val)      //iterator where >= val
+  - upper_bound(val)      //iterator where > val
+  - size()
+  - empty()
+  - clear()
+
+Iteration:
+  for(auto x : st){
+    cout<<x<<" ";
+  }
+
+  for(auto it = st.begin() ; it != st.end() ; ++it){
+    cout<<*it<<" ";
+  }
